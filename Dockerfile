@@ -12,7 +12,7 @@ RUN pip install -r /requirements.txt
 
 ENV PYTHONPATH="/escargot-server:.:$PYTHONPATH"
 
-WORKDIR /escargot-server
+ENV PATH="/escargot-server:/escargot-server/script:$PATH"
 
 # MSN Messenger
 EXPOSE 1863 1864
@@ -23,4 +23,6 @@ EXPOSE 20 23 25 119 5050 5100 8001 8002
 # IRC
 EXPOSE 6667
 
-CMD ["python", "run_all.py"]
+WORKDIR /data
+
+CMD ["python", "/escargot-server/run_all.py"]

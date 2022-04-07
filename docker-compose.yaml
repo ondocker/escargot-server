@@ -4,11 +4,10 @@ services:
   escargot:
     build: .
     volumes:
-      - ./escargot.sqlite:/escargot-server/escargot.sqlite
-      - ./stats.sqlite:/escargot-server/stats.sqlite
-      - ./settings_local.py:/escargot-server/settings_local.py
+      - ./data:/data
     ports:
+      # MSN Messenger
+      - 1863:1863
+      - 1864:1864
+      # IRC
       - 6667:6667
-      #- 1863:1863
-      #- 1864:1864
-    command: python run_all.py
