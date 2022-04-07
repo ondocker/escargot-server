@@ -2,7 +2,8 @@ version: '3'
 
 services:
   escargot:
-    build: .
+    image: ghcr.io/ondocker/escargot-server:master
+    #build: .
     volumes:
       - ./escargot.sqlite:/escargot-server/escargot.sqlite
       - ./stats.sqlite:/escargot-server/stats.sqlite
