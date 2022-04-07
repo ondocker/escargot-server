@@ -1,0 +1,16 @@
+lxml
+aiohttp
+sqlalchemy==1.2.15
+pytest
+jinja2
+pillow
+MarkupSafe
+HLL
+funcli
+git+https://gitlab.com/valtron/sqlaltery.git@v0.1.0
+git+https://gitlab.com/valtron/devtls.git@0.3.0
+pytz
+cryptography
+mypy
+pylint
+python-dateutil

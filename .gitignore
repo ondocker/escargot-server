@@ -1,0 +1,5 @@
+/server
+
+/escargot.sqlite
+/stats.sqlite
+/settings_local.py
